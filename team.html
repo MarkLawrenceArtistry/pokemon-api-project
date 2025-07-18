@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeAPI Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-content">
+        <div class="sidebar">
+            <img src="pokeapi-project-logo.png" id="logo">
+            <h1 class="h1logo">Pokedex PokeAPI</h1>
+            <nav>
+                <ul>
+                    <a href="dashboard.html"><li>Pokedex</li></a>
+                    <a href="team.html"><li class="active">Team Builder</li></a>
+                    <button class="logout" id="logout">Logout</button>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <div class="content-wrapper">
+                <h1 id="display_name"></h1>
+                <div class="team">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module">
+        import { checkSession } from "./util.js";
+
+        document.addEventListener('DOMContentLoaded', () => {
+            checkSession();
+        })
+    </script>
+    <script src="team.js" type="module"></script>
+</body>
+</html>
