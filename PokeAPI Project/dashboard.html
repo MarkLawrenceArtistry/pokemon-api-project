@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeAPI Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-content">
+        <div class="sidebar">
+            <img src="pokeapi-project-logo.png" id="logo">
+            <h1 class="h1logo">Pokedex PokeAPI</h1>
+            <nav>
+                <ul>
+                    <a href="dashboard.html"><li class="active">Pokedex</li></a>
+                    <a href="team.html"><li>Team Builder</li></a>
+                    <button class="logout" id="logout">Logout</button>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <div class="content-wrapper">
+                <div class="search">
+                    <input type="text" class="pokemon_input" placeholder="Enter pokemon name">
+                    <button class="pokemon_btn">Search</button>
+                </div>
+
+                <div class="pokemon_card">
+                    <div class="image_name">
+                        <img src="" class="pokemon_image">
+                        <div class="name">Name</div>
+                    </div>
+
+                    <div class="abilities_types">
+                        <div class="types">
+                            
+                        </div>
+
+                        <div class="abilities">
+
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div class="height_weight">
+                            
+                        </div>
+                        
+                        <div class="entry">Entry</div>
+                    </div>
+
+                    <div class="base_stats">Base Stats</div>
+                    
+                    <div class="cry_add-btn">
+                        <div class="cry">
+                            <audio controls class="pokemon_cry" src=""></audio>
+                        </div>
+
+                        <div class="button_div"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js" type="module"></script>
+</body>
+</html>

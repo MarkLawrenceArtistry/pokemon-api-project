@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeAPI Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="index-content">
+        <div class="image-part">
+            <img src="pokeapi-project-logo.png" id="hero">
+        </div>
+        <div class="form-part">
+            <div class="card">
+                <h1 style="margin-bottom: 20px; font-size: 40px;">Welcome!</h1>
+                <p>Enter your name: </p>
+                <input type="text" id="trainer_name" placeholder="ex. Cynthia">
+                <div class="buttons-group">
+                    <button id="trainer_name_register">Register</button>
+                    <button id="trainer_name_login">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="register.js" type="module"></script>
+    <script src="login.js" type="module"></script>
+    <script type="module">
+        import { redirectSession } from "./util.js";
+
+        document.addEventListener('DOMContentLoaded', () => {
+            redirectSession();
+        })
+    </script>
+</body>
+</html>
